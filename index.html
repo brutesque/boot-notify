@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>BootNotify — Boot notification for OS X</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Sticky footer -->
+		<style>
+			/* Sticky footer styles
+			-------------------------------------------------- */
+			html {
+				position: relative;
+				min-height: 100%;
+			}
+			body {
+				/* Margin bottom by footer height */
+				margin-bottom: 60px;
+			}
+			.footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				/* Set the fixed height of the footer here */
+				height: 60px;
+				background-color: #f5f5f5;
+			}
+			
+			
+			/* Custom page CSS
+			-------------------------------------------------- */
+			
+			.container {
+				padding: 0 15px;
+			}
+			.container .text-muted {
+				margin: 20px 0;
+			}
+		</style>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="jumbotron">
+				<div class="container">
+					<div class="page-header">
+					<h1>BootNotify <small>for macOS and iOS</small></h1>
+				</div>
+				<p>LaunchDaemon for sending Push Notifications on machine boot. Uses <a href="https://itunes.apple.com/us/app/prowl-easy-push-notifications/id320876271">Prowl for iOS</a> to send Push Notifications.</p>
+				<br/>
+				<button type="button" class="btn btn-success btn-xs" data-placement="right" data-toggle="popover" data-html="true" data-title="Bitcoin donation address" data-content='<a href="bitcoin:1GC2UzVR7mFPhN3nW15zLF91wNZ9qi9Sc3"><img src="https://blockchain.info/qr?data=1GC2UzVR7mFPhN3nW15zLF91wNZ9qi9Sc3&size=250" alt="bitcoin:1GC2UzVR7mFPhN3nW15zLF91wNZ9qi9Sc3" style="width: 250px; height: 250px;" width="250" height="250" class="img-responsive"></a><div class="caption"><a href="bitcoin:1GC2UzVR7mFPhN3nW15zLF91wNZ9qi9Sc3"><small>1GC2UzVR7mFPhN3nW15zLF91wNZ9qi9Sc3</small><br/><a href="https://www.bitcoin.org"><small>What is bitcoin?</small></div>'><span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> Donate</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Install BootNotify</h3>
+					<p>First install prowl on your iOS device: <a href="https://itunes.apple.com/us/app/prowl-easy-push-notifications/id320876271">Prowl for iOS</a></p>
+					<p>Create an apikey: <a href="https://www.prowlapp.com">www.prowlapp.com</a></p>
+					<br/>
+					<p>Open Terminal.app and enter the following command:</p>
+				</div>
+				<div class="col-md-12">
+					<pre>bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/master/install.sh)"</pre>
+				</div>
+				<div class="col-md-12">
+					<p>The script will ask for your prowl api key. It also needs adminstrator rights to install the Daemon to run as root, so it might ask for your password.</p>
+				</div>
+				<div class="col-md-12">
+					<pre>Prowl apikey: <kbd>a8d7f...</kbd><br/>...<br/>Password: <kbd>***</kbd><br/>...<br/>Install complete.</pre>
+				</div>
+				<div class="col-md-12">
+					If everything went well, you should receive a Push Notification immediately. You can also do a reboot to try it out.
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Uninstall BootNotify</h3>
+					<p>Open Terminal.app and copy-paste the following line:</p>
+				</div>
+				<div class="col-md-12">
+					<div class="well">bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/master/uninstall.sh)"</div>
+				</div>
+				<div class="col-md-12">
+					<p>The script might ask for your password.</p>
+				</div>
+				<div class="col-md-12">
+					<pre>Password: <kbd>***</kbd><br/>Uninstall complete.</pre>
+				</div>
+			</div>
+
+		</div> <!-- /container -->
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted text-center">By <a href="http://www.brutesque.com" target="_blank">Brutesque</a></p>
+			</div>
+		</footer>
+
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script>
+		$(function () {
+		  $('[data-toggle="popover"]').popover()
+		})
+		</script>
+
+
+	</body>
+</html>
