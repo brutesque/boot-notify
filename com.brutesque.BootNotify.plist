@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.brutesque.BootNotify</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/boot-notify</string>
+	</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>BOOTNOTIFY_API_KEY</key>
+		<string>[YOUR PROWL API KEY]</string>
+	</dict>
+	<key>RunAtLoad</key>
+	<true/>	
+</dict>
+</plist>
