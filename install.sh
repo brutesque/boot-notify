@@ -31,6 +31,7 @@ pushd boot-notify-master/
 
 # Copy scripts to bin
 #------------------------------------------------------------------------------
+sudo mkdir -p /usr/local/bin/
 sudo cp boot-notify.py /usr/local/bin/
 sudo cp boot-notify.sh /usr/local/bin/boot-notify
 sudo chmod +x /usr/local/bin/boot-notify
