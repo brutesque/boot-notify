@@ -1,9 +1,7 @@
 # BootNotify
-Small app to send Push Notification on machine boot
+Small app to send Push Notification on machine boot. Uses Prowl for iOS to send Push Notifications.
 
-The install script sets up a LaunchDaemon to send the Push Notification when the system has booted. The script will wait until internet connection is established.
-
-BootNotify uses Prowl for iOS to send Push Notifications.
+Use the install script to setup up a LaunchDaemon to send the Push Notification when the system has booted.
 
 
 ## Install
