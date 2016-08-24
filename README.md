@@ -1,5 +1,5 @@
 # BootNotify
-LaunchDaemon to send Push Notification on machine boot. Uses Prowl for iOS to send Push Notifications.
+LaunchDaemon for sending Push Notifications on machine boot. Uses Prowl for iOS to send Push Notifications.
 
 
 ## Install
@@ -15,9 +15,9 @@ $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/
 
 The script will ask for your prowl api key. It also needs adminstrator rights to install the Daemon to run as root, so it might ask for your password.
 ```
-Prowl apikey:
+Prowl apikey: a8d7f...
 ...
-Password:
+Password: ***
 ...
 Install complete.
 ```
@@ -34,6 +34,6 @@ $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/
 
 The script might ask for your password.
 ```
-Password:
+Password: ***
 Uninstall complete.
 ```
