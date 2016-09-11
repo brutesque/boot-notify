@@ -10,7 +10,7 @@ Create an apikey: https://www.prowlapp.com
 
 Open Terminal.app and enter the following command:
 ```sh
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/master/install.sh)"
+$ bash -c "$(curl -fsSL raw.githubusercontent.com/brutesque/boot-notify/master/install.sh)"
 ```
 
 The script will ask for your prowl api key. It also needs adminstrator rights to install the Daemon to run as root, so it might ask for your password.
@@ -29,7 +29,7 @@ If everything went well, you should receive a Push Notification immediately. You
 
 Open Terminal.app and copy-paste the following line:
 ```sh
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/brutesque/boot-notify/master/uninstall.sh)"
+$ bash -c "$(curl -fsSL raw.githubusercontent.com/brutesque/boot-notify/master/uninstall.sh)"
 ```
 
 The script might ask for your password.
